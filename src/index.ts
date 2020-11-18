@@ -15,11 +15,11 @@ function addUSBhandler() {
       // iterate through all drives
       for (let d = 0; d < drives.length; d++) {
         // if the drive is a removable usb
-        if (drives[d].isSystem === false) {
+        if (drives[d].isSystem === false && drives[d].isReadOnly === false) {
           // if this drive is mounted
           if (drives[d].mountpoints.length > 0) {
             console.log('found it!');
-            console.log(drives[d].mountpoints[0].path);
+            console.log(drives[d].mountpoints);
             // the drive is mounted
             // do stuff here.
             // the path is at drives[d].mountpoints[0].path
