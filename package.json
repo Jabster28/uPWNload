@@ -29,5 +29,5 @@
     "usb": "^1.6.3",
     "usb-detection": "^4.10.0"
   },
-  "bin": "build/index.js"
+  "bin": "dist/index.js"
 }
